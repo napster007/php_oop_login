@@ -1,3 +1,6 @@
+<?php
+include 'includes/autoload.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 </head>
 <body>
     <div>
-        <form methond="POST" action="login.inc.php">
+        <form method="POST" action="includes/login.inc.php">
             <label for="email">Email: </label><input type="email" name="email" id="email">
             <label for="password">Password: </label> <input type="password" name="password" id="password">
             <button type="submit">Login</button>

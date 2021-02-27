@@ -25,5 +25,22 @@ class Users extends Dbh{
 			echo "Error in registration";
 		}
 	}
+
+
+	/////Show all users
+	protected function getAllUsers(){
+		
+			$sql ="SELECT* FROM users";	
+			$stmt = $this->connect()->query($sql);
+			while($row = $stmt->fetch()){
+				echo '<tr>';
+				echo '<td>'.$row['ufname']. ' '. $row['ulname'].'</td>';
+				echo '<td>'.$row['ubday']. '</td>';
+				echo '<td>'.$row['email'].'</td>';
+				echo '<td>'.$row['upassword'].'</td>';
+				echo '</tr>';
+			}
+		
+	} 
 }
 

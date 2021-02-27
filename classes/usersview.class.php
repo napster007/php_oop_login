@@ -18,4 +18,8 @@ class UsersView extends Users{
             echo "Something is Wrong!";
         }
     }
+    ////sHOW ALL USERS IN USERSPAGE.PHP
+    public function showAllUsers(){
+        $results = $this->getAllUsers();
+    }
 }

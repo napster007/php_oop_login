@@ -1,3 +1,6 @@
+<?php
+include 'includes/autoload.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +11,19 @@
 </head>
 <body>
     <h1>Hello User</h1>
+    <table border='3px' cellpadding="2px">
+        <tr>
+            <th> FullName</th>
+            <th>Birthday</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        
+        <?php
+            $showAllUsers = new UsersView();
+            $showAllUsers->showAllUsers();
+        ?>
+    </table>
+    
 </body>
 </html>

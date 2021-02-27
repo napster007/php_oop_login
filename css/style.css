@@ -1,0 +1,8 @@
+#form_container{
+    display: block;
+    min-height: 150px;
+    width: 160px;
+    border: groove 1px;
+    margin: 0 auto;
+    padding: 5px;
+}

@@ -12,8 +12,8 @@ include 'includes/autoload.inc.php';
 <body>
     <div>
         <form method="POST" action="includes/login.inc.php">
-            <label for="email">Email: </label><input type="email" name="email" id="email">
-            <label for="password">Password: </label> <input type="password" name="password" id="password">
+            <label for="email">Email: </label><input type="email" name="uemail" id="uemail">
+            <label for="password">Password: </label> <input type="password" name="upassword" id="upassword">
             <button type="submit">Login</button>
         </form>
     </div>

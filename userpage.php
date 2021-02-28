@@ -17,6 +17,7 @@ include 'includes/autoload.inc.php';
             <th>Birthday</th>
             <th>Email</th>
             <th>Password</th>
+            <th>Action</th>
         </tr>
         
         <?php

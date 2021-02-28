@@ -8,4 +8,14 @@ class UsersContr extends Users{
         $this->setUser($fname, $lname, $dob, $email, $password);
         
     }
+
+    public function getspecificUser($uid){
+
+        $this->specificUser($uid);
+        
+    }
+
+    public function deleteUser($uid, $fname, $lname, $dob, $email, $password){
+        $this->deleteUserById($uid, $fname, $lname, $dob, $email, $password);
+    }
 }

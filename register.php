@@ -15,11 +15,11 @@ include 'includes/autoload.inc.php';
 <body>
     <div id="form_container">
         <form action="includes/register.inc.php" method="post">
-            <label for="fname">First Name </label><input type="text" name="fname" id="fname">
-            <label for="lname">Last Name: </label> <input type="text" name="lname" id="lname">
-            <label for="dob">Date of Birth: </label> <input type="date" name="dob" id="dob">
-            <label for="email">Email: </label><input type="email" name="email" id="email">
-            <label for="password">Password: </label> <input type="password" name="password" id="password">
+            <label for="fname">First Name </label><input type="text" name="fname" id="fname" required />
+            <label for="lname">Last Name: </label> <input type="text" name="lname" id="lname" required />
+            <label for="dob">Date of Birth: </label> <input type="date" name="ubday" id="ubday" required />
+            <label for="email">Email: </label><input type="email" name="email" id="email" required/>
+            <label for="password">Password: </label> <input type="password" name="password" id="password" required/>
             <button type="submit">Register</button>
         </form>
     </div>

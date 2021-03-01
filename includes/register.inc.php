@@ -3,7 +3,7 @@ include 'autoload.inc.php';
 
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
-$dob = $_POST['dob'];
+$dob = $_POST['ubday'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 

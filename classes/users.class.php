@@ -148,7 +148,7 @@ class Users extends Dbh{
 
 		if($deleteUser){
 
-			header("refresh:1; userpage.php?uid=$uid");
+			header("refresh:1; userpage.php?stat=success");
 
 		}else{
 			echo "Error in deleting user";

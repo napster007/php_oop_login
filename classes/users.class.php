@@ -101,7 +101,7 @@ class Users extends Dbh{
 
 
 	/////////Delete user by ID
-	protected function deleteUserById($uid, $fname, $lname, $dob, $email, $password){
+	protected function updateUserById($uid, $fname, $lname, $dob, $email, $password){
 		$sql="UPDATE users SET ufname = ?, ulname = ?, ubday = ?, uemail = ?, upassword = ? WHERE uid = ?";
 		$stmt = $this->connect()->prepare($sql);
 		//$results = $stmt->execute([$fname, $lname, $dob, $email, $password]);
@@ -137,6 +137,21 @@ class Users extends Dbh{
 			echo $e->getMessage();
 		} */
 
+	}
+
+		///Deleting USer
+	protected function deleteUserById($uid){
+		$sql="DELETE FROM users WHERE uid = ?";
+		$stmt = $this->connect()->prepare($sql);
+		$deleteUser = $stmt->execute([$uid]);
+
+		if($deleteUser){
+
+			header("refresh:1; userpage.php?uid=$uid");
+
+		}else{
+			echo "Error in deleting user";
+		}
 	}
 }
 

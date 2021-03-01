@@ -10,4 +10,4 @@ $email = $_POST['uemail'];
 $password = $_POST['upassword'];
 
 $updateSpecUser = new UsersContr();
-$updateSpecUser->deleteUser($uid, $fname, $lname, $dob, $email, $password);
+$updateSpecUser->updateUser($uid, $fname, $lname, $dob, $email, $password);

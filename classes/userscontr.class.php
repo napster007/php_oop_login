@@ -15,7 +15,12 @@ class UsersContr extends Users{
         
     }
 
-    public function deleteUser($uid, $fname, $lname, $dob, $email, $password){
-        $this->deleteUserById($uid, $fname, $lname, $dob, $email, $password);
+    public function updateUser($uid, $fname, $lname, $dob, $email, $password){
+        $this->updateUserById($uid, $fname, $lname, $dob, $email, $password);
     }
+
+    public function deleteUser($uid){
+        $this->deleteUserById($uid);
+    }
+    
 }

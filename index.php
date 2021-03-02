@@ -10,8 +10,6 @@ include 'includes/autoload.inc.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
     <link rel="stylesheet" type="text/css" href="components/bootstrap-5.0.0/css/bootstrap.min.css">
-    <script src="components/bootstrap-4.6.0/js/bootstrap.min.js"></script>
-    <script src="components/bootstrap-4.6.0/js/bootstrap.js"></script>
     <script src="components/js/jquery-3.5.1.min.js"></script>
 
     
@@ -61,9 +59,9 @@ include 'includes/autoload.inc.php';
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item" data-bs-interval="3000">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
-  
+        <div class="carousel-item active" data-bs-interval="5000">
+         <!--  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+        <img src="components/imgs/carousel/1.jpg" height="100%" width="100%">
           <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
@@ -72,8 +70,8 @@ include 'includes/autoload.inc.php';
             </div>
           </div>
         </div>
-        <div class="carousel-item active" data-bs-interval="2000">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+        <div class="carousel-item " data-bs-interval="2000">
+        <img src="components/imgs/carousel/2.jpg" height="100%" width="100%">
   
           <div class="container">
             <div class="carousel-caption">
@@ -84,7 +82,7 @@ include 'includes/autoload.inc.php';
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+        <img src="components/imgs/carousel/3.jpg" height="100%" width="100%">
   
           <div class="container">
             <div class="carousel-caption ">

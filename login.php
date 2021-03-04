@@ -25,7 +25,7 @@ include 'includes/autoload.inc.php';
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a href="#" class="nav-link active">Home</a>
+                        <a href="index.php" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">About Us</a>
@@ -40,12 +40,46 @@ include 'includes/autoload.inc.php';
             </div>
         </div>
     </nav>
-    <div>
-        <form method="POST" action="includes/login.inc.php">
-            <label for="email">Email: </label><input type="email" name="uemail" id="uemail" required>
+
+    <div class="container g-3">
+
+        <form method="POST" action="includes/login.inc.php" class="mb-3">
+            <div class="row">
+                <div class="col-5">
+                   <h1>Login</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <label for="inputEmail" class="visually-hidden">Password</label>
+                    <input type="email" class="form-control" id="inputEmail" name="uemail" placeholder="Email" required>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-5">
+                    <label for="inputPassword" class="visually-hidden">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" name="upassword" placeholder="Password" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5">
+                    <button type="submit" class="btn btn-primary mb-3">Login</button>
+                </div>
+            </div>
+            
+
+            
+            <!-- <label for="email">Email: </label><input type="email" name="uemail" id="uemail" required>
             <label for="password">Password: </label> <input type="password" name="upassword" id="upassword" required>
-            <button type="submit">Login</button>
+            <button type="submit">Login</button> -->
         </form>
+
+        
     </div>
+
+    
+ 
 </body>
 </html>

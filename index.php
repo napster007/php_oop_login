@@ -11,6 +11,10 @@ include 'includes/autoload.inc.php';
  
     <link rel="stylesheet" type="text/css" href="components/bootstrap-5.0.0/css/bootstrap.min.css">
     <script src="components/js/jquery-3.5.1.min.js"></script>
+    <script src="components/bootstrap-5.0.0/js/bootstrap.min.js"></script>
+    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     
     <title>Index</title>
@@ -36,7 +40,7 @@ include 'includes/autoload.inc.php';
             margin:0 auto;
         }
       </style>
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
             <div class="col-sm">
                 <ul class="nav justify-content-end ">
@@ -49,8 +53,40 @@ include 'includes/autoload.inc.php';
                 </ul>
             </div>
         </div>
-      </div>
+      </div> -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="components/imgs/carousel/1.jpg" height="50px" width="70px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="index.php" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Site Map</a>
+                    </li>
+                </ul>
 
+                <ul class="nav justify-content-end g-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php" >Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.php">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
  <div class="carousel_container">  
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
